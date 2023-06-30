@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* making the footer stick to the bottom of the page */
+#app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto minmax(100vh, 1fr) auto;
+}
+
+#app > *{  
+    grid-column: 1/-1;
+}
